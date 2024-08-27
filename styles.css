@@ -1,0 +1,52 @@
+body{
+background-color: rgb(84, 84, 87);
+margin: 0;
+padding: 20px;
+box-sizing: border-box; /* Inclui padding e borda no cálculo da largura/altura */
+border: 50px solid #333;
+border-radius: 20px; 
+}
+.meu-botao {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white;              /* Cor do texto branco */
+    padding: 10px 20px;        /* Espaçamento interno */
+    border: none;              /* Sem borda */
+    border-radius: 5px;        /* Bordas arredondadas */
+    cursor: pointer;    
+    margin-bottom: 20px;        /* Muda o cursor ao passar por cima */
+}
+
+.meu-botao:hover {
+    background-color: #45a049; /* Cor de fundo quando o mouse passa por cima */
+}
+.Caixa-texto {
+    background-color: #e0ede1;
+    color: rgb(219, 15, 15);  
+    padding: 10px 20px;        /* Espaçamento interno */
+    border: none;              /* Sem borda */
+    border-radius: 5px;        /* Bordas arredondadas */
+    cursor: pointer;  
+   /* padding: 10% 0; */
+}
+.container{
+    display: grid;
+    padding: 20% 0;
+    margin: 10px
+}
+.Resultado{
+    color: rgb(255, 255, 255);  
+    width: 100%; /* Faz o textarea ocupar toda a largura disponível */
+    height: 200px; /* Define a altura aproximadamente equivalente a rows="10" */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura */
+    padding: 10px; /* Adiciona algum preenchimento interno */
+    border: 1px solid #ccc; /* Define a borda do textarea */
+    font-size: 16px; /* Define o tamanho da fonte */
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+    cursor: not-allowed; /* Indica que o campo não pode ser editado */
+}
+.titulo{
+    font-size: 200%;
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);  
+}
