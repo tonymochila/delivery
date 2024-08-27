@@ -1,11 +1,7 @@
-body{
-background-color: rgb(84, 84, 87);
-margin: 0;
-padding: 20px;
-box-sizing: border-box; /* Inclui padding e borda no cálculo da largura/altura */
-border: 50px solid #333;
-border-radius: 20px; 
+*{
+    background-color: rgb(90, 90, 94);
 }
+
 .meu-botao {
     background-color: #4CAF50; /* Cor de fundo verde */
     color: white;              /* Cor do texto branco */
@@ -29,22 +25,28 @@ border-radius: 20px;
    /* padding: 10% 0; */
 }
 .container{
+   
     display: grid;
-    padding: 20% 0;
     margin: 10px
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura */
+    padding: 10px; /* Adiciona algum p
+    reenchimento interno */
+    border: 100px solid #5a5858;
 }
 .Resultado{
+   
     color: rgb(255, 255, 255);  
     width: 100%; /* Faz o textarea ocupar toda a largura disponível */
     height: 200px; /* Define a altura aproximadamente equivalente a rows="10" */
     box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura */
     padding: 10px; /* Adiciona algum preenchimento interno */
-    border: 1px solid #ccc; /* Define a borda do textarea */
+    border: 1px solid rgb(90, 90, 94); /* Define a borda do textarea */
     font-size: 16px; /* Define o tamanho da fonte */
     resize: vertical; /* Permite redimensionar apenas verticalmente */
     cursor: not-allowed; /* Indica que o campo não pode ser editado */
 }
 .titulo{
+    border: none; 
     font-size: 200%;
     padding: 20px;
     text-align: center;
