@@ -7,15 +7,84 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <p class="titulo">digite o cep com somente numeros</p>
-        <textarea class="Resultado"id="resultado" readonly></textarea>
-        <button class="meu-botao"onclick="buscarDados()">consulta cep</button>
-   <input class="Caixa-texto" id="texto">
-    </input>
-        
-    </div>
+    <div class="container"></div>
 
+    <div id="container1" class="container hidden">
+        <div class="pedido">
+        </div>
+        <div class="carrinho"><button class="buttons" onclick="showContainer3()">continuar</button>
+            <button class="buttons" onclick="showContainer2()">volta para o menu</button></div>
+       
+    
+    </div>
+    <div id="container2" class="container visible">
+        <div class="titulo">Lanchonete topzeira</div>
+        <div class="scroll-container2">
+        <div class="categoria">
+            <button class="buttons" onclick="showContainer1()">Mostrar Container 1</button>
+            <button class="buttons" onclick="showContainer1()">Mostrar Container 1</button>
+            <button class="buttons" onclick="showContainer1()">Mostrar Container 1</button>
+            <button class="buttons" onclick="showContainer1()">Mostrar Container 1</button>
+            <button class="buttons" onclick="showContainer1()">Mostrar Container 1</button>
+            <button class="buttons" onclick="showContainer1()">Mostrar Container 1</button>
+        </div>
+    </div>
+        <input class="procura" id="pesquisa">
+         </input>
+        <div class="scroll-container">
+         <div class="cardapio">
+        
+            <div class="produtos">Item 1</div>
+            <div class="produtos">Item 2</div>
+            <div class="produtos">Item 3</div>
+            <div class="produtos">Item 4</div>
+            <div class="produtos">Item 5</div>
+            <div class="produtos">Item 6</div>
+            <div class="produtos">Item 7</div>
+            <div class="produtos">Item 8</div>
+            <div class="produtos">Item 9</div>
+            <div class="produtos">Item 10</div>
+            <div class="produtos">Item 1</div>
+            <div class="produtos">Item 2</div>
+            <div class="produtos">Item 3</div>
+            <div class="produtos">Item 4</div>
+            <div class="produtos">Item 5</div>
+            <div class="produtos">Item 6</div>
+            <div class="produtos">Item 7</div>
+            <div class="produtos">Item 8</div>
+            <div class="produtos">Item 9</div>
+            <div class="produtos">Item 10</div>
+            <div class="produtos">Item 1</div>
+            <div class="produtos">Item 2</div>
+            <div class="produtos">Item 3</div>
+            <div class="produtos">Item 4</div>
+            <div class="produtos">Item 5</div>
+            <div class="produtos">Item 6</div>
+            <div class="produtos">Item 7</div>
+            <div class="produtos">Item 8</div>
+            <div class="produtos">Item 9</div>
+            <div class="produtos">Item 10</div>
+            
+            
+            
+        </div>
+       </div>
+        <button class="buttons" onclick="showContainer1()">carrinho</button>
+    </div>
+    <div id="container3" class="container hidden">
+        <div class="pagina3">
+        <p>digite o cep com somente numeros</p>
+        <textarea id="resultado" readonly></textarea>
+        <button class="buttons"onclick="buscarDados()">consulta cep</button>
+        <input class="Caixa-texto" id="texto">
+     </input>
+            <button class="buttons" onclick="showContainer2()">volta para o menu</button>
+        </div>
+    </div>
+    
+    
+
+    
     <script src="script.js"></script>
 </body>
 </html>

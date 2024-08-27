@@ -44,11 +44,41 @@ function buscarDados() {
  }
 }
 
+   // Seleciona todos os itens
+   const items = document.querySelectorAll('.produtos');
 
-function mudarTexto() {
-   
+   // Adiciona um evento de clique a cada item
+   items.forEach(item => {
+       item.addEventListener('click', () => {
+           alert(item.textContent + ' foi clicado!');
+       });
+   });
 
-    if(textoDigitado.length<1){
-        alert("digite um cep")
-    }
-}  
+
+
+function showContainer1() {
+    document.getElementById('container1').classList.remove('hidden');
+    document.getElementById('container1').classList.add('visible');
+    document.getElementById('container2').classList.remove('visible');
+    document.getElementById('container2').classList.add('hidden');
+    document.getElementById('container3').classList.remove('visible');
+    document.getElementById('container3').classList.add('hidden');
+}
+
+function showContainer2() {
+    document.getElementById('container1').classList.remove('visible');
+    document.getElementById('container1').classList.add('hidden');
+    document.getElementById('container2').classList.remove('hidden');
+    document.getElementById('container2').classList.add('visible');
+    document.getElementById('container3').classList.remove('visible');
+    document.getElementById('container3').classList.add('hidden');
+}
+
+function showContainer3() {
+    document.getElementById('container1').classList.remove('visible');
+    document.getElementById('container1').classList.add('hidden');
+    document.getElementById('container2').classList.remove('visible');
+    document.getElementById('container2').classList.add('hidden');
+    document.getElementById('container3').classList.remove('hidden');
+    document.getElementById('container3').classList.add('visible');
+}

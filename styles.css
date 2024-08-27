@@ -1,8 +1,6 @@
-*{
-    background-color: rgb(90, 90, 94);
-}
 
-.meu-botao {
+
+.buttons {
     background-color: #4CAF50; /* Cor de fundo verde */
     color: white;              /* Cor do texto branco */
     padding: 10px 20px;        /* Espaçamento interno */
@@ -11,44 +9,151 @@
     cursor: pointer;    
     margin-bottom: 20px;        /* Muda o cursor ao passar por cima */
 }
-
-.meu-botao:hover {
+.buttons:hover {
     background-color: #45a049; /* Cor de fundo quando o mouse passa por cima */
 }
-.Caixa-texto {
-    background-color: #e0ede1;
-    color: rgb(219, 15, 15);  
-    padding: 10px 20px;        /* Espaçamento interno */
-    border: none;              /* Sem borda */
-    border-radius: 5px;        /* Bordas arredondadas */
-    cursor: pointer;  
-   /* padding: 10% 0; */
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
-.container{
-   
-    display: grid;
-    margin: 10px
-    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura */
-    padding: 10px; /* Adiciona algum p
-    reenchimento interno */
-    border: 100px solid #5a5858;
+
+.container.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
-.Resultado{
+
+.container.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilos adicionais para os containers */
+#container1 {
+    display: flex; 
+    align-items: center;
+    background-color: lightblue; 
+    
+}
+
+#container2 {
+    background-color: lightgreen;
+    display: grid;    
+      /* Define a largura do container */
+     
+    .cardapio{
+        justify-content: center; /* Alinha horizontalmente */
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px;
+       
+        padding: 10px;
+      
+     
+    }
+}
+.categoria{
+    display: grid; 
+    grid-template-columns: repeat(10, 1fr); 
+    gap: 10px;
    
-    color: rgb(255, 255, 255);  
-    width: 100%; /* Faz o textarea ocupar toda a largura disponível */
-    height: 200px; /* Define a altura aproximadamente equivalente a rows="10" */
-    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura */
-    padding: 10px; /* Adiciona algum preenchimento interno */
-    border: 1px solid rgb(90, 90, 94); /* Define a borda do textarea */
-    font-size: 16px; /* Define o tamanho da fonte */
-    resize: vertical; /* Permite redimensionar apenas verticalmente */
-    cursor: not-allowed; /* Indica que o campo não pode ser editado */
+   /* padding: 10px;*/
+ }
+.produtos{
+    justify-content: center; /* Alinha horizontalmente */
+    cursor: pointer;
+    transition: background-color 0.3s ease;  
+    padding: 40px;
+    border-radius: 5px; 
+    background-color: #e0ede1
+     
+  }
+.produtos:hover {
+    background-color: #34a7d8; /* Cor de fundo quando o mouse passa por cima */
+}
+.procura{
+    background-color: #e0ede1
+}
+.scroll-container {
+    justify-content: center; /* Alinha horizontalmente */
+    width: 600px;   /* Define a largura do container */
+    height: 400px;  /* Define a altura do container */
+    overflow-y: auto; /* Permite rolar verticalmente */
+    /*border: 2px solid #ccc; /* Adiciona uma borda ao container */
+    padding: 10px; /* Adiciona um espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
+ /* Oculta a barra de rolagem em navegadores baseados em WebKit */
+ .scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Oculta a barra de rolagem em Firefox */
+.scroll-container {
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Oculta a barra de rolagem em Edge e Internet Explorer */
+.scroll-container {
+    -ms-overflow-style: none; /* Internet Explorer e Edge */
+}
+
+.scroll-container2 {
+    margin: 0 auto;
+    /*justify-content: center; /* Alinha horizontalmente */
+    width: 580px;   /* Define a largura do container */
+    height: 90px;  /* Define a altura do container */
+    overflow-x: hidden; /* Permite rolar verticalmente */
+    /*border: 2px solid #ccc; /* Adiciona uma borda ao container */
+  /*  padding: 10px; /* Adiciona um espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
+#container3{
+    background-color: aqua;
+}
+.pagina3{
+   
+    display: grid; 
+    
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 10px;
+    
 }
 .titulo{
-    border: none; 
-    font-size: 200%;
-    padding: 20px;
     text-align: center;
-    color: rgb(255, 255, 255);  
+    background-color: beige;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 10px;  
+       
+       
+}
+.procura{
+    width: 500px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+.pedido{
+    margin: 0; /* Centraliza horizontalmente */
+    text-align: center;
+    background-color: beige;
+    padding: 100px;
+    height: 50%;
+    width: 30%;
+    border-radius: 10px;  
+    gap: 0px;
+}
+.carrinho{
+    display: grid; 
+    
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    position: absolute;
+    bottom: 10px; 
+           
+   
 }
