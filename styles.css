@@ -43,18 +43,20 @@
 
 #container2 {
     background-color: lightgreen;
-    display: grid;    
+    display: table-column;    
+    justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
       /* Define a largura do container */
      
     .cardapio{
         justify-content: center; /* Alinha horizontalmente */
-        display: grid; 
+        display: grid
+        ; 
         grid-template-columns: repeat(3, 1fr); 
+        
         gap: 10px;
        
         padding: 10px;
-      
-     
     }
 }
 .categoria{
@@ -81,7 +83,7 @@
 }
 .scroll-container {
     justify-content: center; /* Alinha horizontalmente */
-    width: 600px;   /* Define a largura do container */
+    width: 100%;   /* Define a largura do container */
     height: 400px;  /* Define a altura do container */
     overflow-y: auto; /* Permite rolar verticalmente */
     /*border: 2px solid #ccc; /* Adiciona uma borda ao container */
@@ -105,8 +107,8 @@
 
 .scroll-container2 {
     margin: 0 auto;
-    /*justify-content: center; /* Alinha horizontalmente */
-    width: 580px;   /* Define a largura do container */
+    justify-content: center; /* Alinha horizontalmente */
+    width: 100%;   /* Define a largura do container */
     height: 90px;  /* Define a altura do container */
     overflow-x: hidden; /* Permite rolar verticalmente */
     /*border: 2px solid #ccc; /* Adiciona uma borda ao container */
@@ -134,8 +136,12 @@
        
 }
 .procura{
-    width: 500px;
-    margin: 0 auto; /* Centraliza horizontalmente */
+    
+    width: 90%;
+  
+        border-radius: 10px;  
+        padding: 10px;
+        margin: 10px;
 }
 .pedido{
     margin: 0; /* Centraliza horizontalmente */
@@ -156,4 +162,7 @@
     bottom: 10px; 
            
    
+}
+.entrega{
+    margin: 0 auto;
 }

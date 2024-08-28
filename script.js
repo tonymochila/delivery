@@ -31,12 +31,16 @@ function buscarDados() {
             `;
              // Exibe os dados formatados na caixa de texto
              document.getElementById('resultado').value = dadosFormatados;
-        })
+             document.getElementById('Rua').value = data.logradouro;
+             document.getElementById('Bairro').value = data.bairro;
+             document.getElementById('Cidade').value = data.localidade;
+             document.getElementById('Estado').value = data.uf;
+            })
         .catch(error => {
             console.error('Erro ao fazer a solicitação:', error);
         });
 
-        document.getElementById('texto').value = '';
+        //document.getElementById('texto').value = '';
  }
  else{
     document.getElementById('texto').value = '';

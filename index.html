@@ -10,12 +10,11 @@
     <div class="container"></div>
 
     <div id="container1" class="container hidden">
-        <div class="pedido">
+        <div class="pedido"></div>
+        <div class="carrinho">
+            <button class="buttons" onclick="showContainer3()">continuar</button>
+            <button class="buttons" onclick="showContainer2()">volta para o menu</button>
         </div>
-        <div class="carrinho"><button class="buttons" onclick="showContainer3()">continuar</button>
-            <button class="buttons" onclick="showContainer2()">volta para o menu</button></div>
-       
-    
     </div>
     <div id="container2" class="container visible">
         <div class="titulo">Lanchonete topzeira</div>
@@ -29,8 +28,7 @@
             <button class="buttons" onclick="showContainer1()">Mostrar Container 1</button>
         </div>
     </div>
-        <input class="procura" id="pesquisa">
-         </input>
+        <input class="procura" id="pesquisa"> </input>
         <div class="scroll-container">
          <div class="cardapio">
         
@@ -73,12 +71,21 @@
     </div>
     <div id="container3" class="container hidden">
         <div class="pagina3">
-        <p>digite o cep com somente numeros</p>
-        <textarea id="resultado" readonly></textarea>
-        <button class="buttons"onclick="buscarDados()">consulta cep</button>
-        <input class="Caixa-texto" id="texto">
-     </input>
-            <button class="buttons" onclick="showContainer2()">volta para o menu</button>
+            <div class="titulo">
+                Endereço de Entrega
+            </div>
+        
+     <input id="texto"placeholder="Digite o CEP aqui..."></input>
+     <input id="Rua"placeholder="Rua/Avenida"></input>
+     <input id="Bairro"placeholder="Bairro"></input>
+     <input id="Cidade"placeholder="Cidade"></input>
+     <input id="Estado"placeholder="Estado"></input>
+     <input placeholder="Complemento"></input>
+     <div class="entrega" >
+        <button class="buttons" onclick="showContainer2()">voltar</button>
+        <button class="buttons" onclick="showContainer1()">continuar</button>
+     </div>
+    
         </div>
     </div>
     
