@@ -10,6 +10,7 @@ window.addEventListener('keydown', function(event) {
 function buscarDados() {
     var textoDigitado = document.getElementById('texto').value;
     var cep=textoDigitado.trim()
+    
     if(cep.length===8){
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
         .then(response => {
@@ -30,7 +31,7 @@ function buscarDados() {
             UF: ${data.uf}
             `;
              // Exibe os dados formatados na caixa de texto
-             document.getElementById('resultado').value = dadosFormatados;
+            
              document.getElementById('Rua').value = data.logradouro;
              document.getElementById('Bairro').value = data.bairro;
              document.getElementById('Cidade').value = data.localidade;
@@ -40,7 +41,7 @@ function buscarDados() {
             console.error('Erro ao fazer a solicitação:', error);
         });
 
-        //document.getElementById('texto').value = '';
+       // document.getElementById('texto').value = '';
  }
  else{
     document.getElementById('texto').value = '';
